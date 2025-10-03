@@ -58,7 +58,7 @@ class texteditor{
     void deleteChar() {
         if (current == head) {
             cout << "After delete: " << tostring() << endl;
-            return; // nothing to delete
+            return; // nothing to delete so it returns
         }
         Node* to_delete;
         if (current == NULL) { // delete last node
