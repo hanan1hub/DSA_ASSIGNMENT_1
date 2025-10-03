@@ -26,7 +26,7 @@ class texteditor{
     bool is_empty(){
         return head == NULL;
     }
-    void insert_char(char c){
+    void insertChar(char c){
         Node* new_node = new Node(c);
         if(is_empty()){
             head = tail = new_node;
@@ -126,15 +126,15 @@ class texteditor{
 int main(){
 
     texteditor ed;
-    ed.insert_char('a');
-    ed.insert_char('b');
+    ed.insertChar('a');
+    ed.insertChar('b');
     ed.deleteChar();
-    ed.insert_char('c');
+    ed.insertChar('c');
     ed.move_left();
-    ed.insert_char('x');
+    ed.insertChar('x');
     ed.deleteChar();
     ed.move_right();
-    ed.insert_char('e');
+    ed.insertChar('e');
     ed.deleteChar();
 
     return 0;
