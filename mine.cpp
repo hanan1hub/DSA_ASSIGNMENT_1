@@ -51,13 +51,13 @@ class texteditor{
             } 
             
         }
-        cout<<"After insert '"<<c<<" ': "<<tostring()<<endl;
+        cout<<"After insert '"<<c<<" ': "<<getTextWithCursor()<<endl;
 
     }
 
     void deleteChar() {
         if (current == head) {
-            cout << "After delete: " << tostring() << endl;
+            cout << "After delete: " << getTextWithCursor() << endl;
             return; // nothing to delete so it returns
         }
         Node* to_delete;
@@ -81,12 +81,12 @@ class texteditor{
             } 
         }
         delete to_delete;
-        cout << "After delete: " << tostring() << endl;
+        cout << "After delete: " << getTextWithCursor() << endl;
     }
 
-    void move_left(){
+    void moveLeft(){
         if(current == head){
-            cout<<"after moving left :"<<tostring()<<endl;
+            cout<<"after moving left :"<<getTextWithCursor()<<endl;
             return;
         }
         if(current == NULL){
@@ -94,18 +94,18 @@ class texteditor{
         }else{
             current = current->previous;
         }
-        cout<<"after moving left :"<<tostring()<<endl;
+        cout<<"after moving left :"<<getTextWithCursor()<<endl;
     }
-    void move_right(){
+    void moveRight(){
         if(current == NULL){
-            cout<<"after moving right :"<<tostring()<<endl;
+            cout<<"after moving right :"<<getTextWithCursor()<<endl;
             return;
         }else{
             current = current->next;
-            cout<<"after moving right :"<<tostring()<<endl;
+            cout<<"after moving right :"<<getTextWithCursor()<<endl;
         }
     }
-    string tostring(){
+    string getTextWithCursor() const{
         string result;
         
         Node* temp = head;
@@ -130,10 +130,10 @@ int main(){
     ed.insertChar('b');
     ed.deleteChar();
     ed.insertChar('c');
-    ed.move_left();
+    ed.moveLeft();
     ed.insertChar('x');
     ed.deleteChar();
-    ed.move_right();
+    ed.moveRight();
     ed.insertChar('e');
     ed.deleteChar();
 
