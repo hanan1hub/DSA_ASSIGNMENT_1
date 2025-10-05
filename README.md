@@ -3,20 +3,25 @@
 🧾 DSA Assignment 1 — Advanced ADTs and Simulations
 
 Author: Hanan Majeed (519166)
+
 Course: Data Structures and Algorithms
-Instructor: —
+
+Instructor: Fahad Ahmad Satti
 
 📘 Approach
 
-This assignment consists of three distinct problems implemented in C++:
+the major hurdle was of class redefing error which was out of my thinking i tried different appreoaches but all in vain but here comes the email of using hidden keyword and i just click virtual and solved the problem.
 
 Polynomial ADT:
+
 Implemented using a linked list structure to store terms (coefficient, power). Each Polynomial object maintains its own linked list via a global map. Supports insertion, addition, multiplication, and derivative operations with proper merging and simplification.
 
 Text Editor Simulation:
+
 Designed with a doubly linked list representing text characters. The editor supports cursor movement, insertion, and deletion efficiently in O(1) time per operation. Properly handles boundary conditions like moving beyond start/end and deleting in an empty editor.
 
 UNO Game Simulation:
+
 A vector-based simulation of the UNO card game for 2–4 players. The game handles deck initialization (fixed seed for reproducibility), player turns, direction changes, and action cards (Skip, Reverse, Draw Two). Includes logic for UNO alerts, game-over detection, and stalemate handling.
 
 All implementations strictly follow modular OOP design, adhere to the given header interfaces, and maintain the same coding style and brace formatting for consistency.
