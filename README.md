@@ -1,6 +1,6 @@
 # DSA_ASSIGNMENT_1
 
-🧾 DSA Assignment 1 — Advanced ADTs and Simulations
+🧾 DSA Assignment 1 (Advanced ADTs and Simulations)
 
 Author: Hanan Majeed (519166)
 
@@ -8,7 +8,7 @@ Course: Data Structures and Algorithms
 
 Instructor: Fahad Ahmad Satti
 
-📘 Approach
+📘 Approach::
 
 the major hurdle was of class redefing error which was out of my thinking i tried different appreoaches but all in vain but here comes the email of using hidden keyword and i just click virtual and solved the problem.
 
@@ -26,12 +26,13 @@ A vector-based simulation of the UNO card game for 2–4 players. The game handl
 
 All implementations strictly follow modular OOP design, adhere to the given header interfaces, and maintain the same coding style and brace formatting for consistency.
 
-🌐 Public GitHub Repository
+🌐 Public GitHub Repository::
 
 🔗(https://github.com/hanan1hub/DSA_ASSIGNMENT_1.git)
 
 
-⚙️ Challenges Faced
+⚙️ Challenges Faced::
+
 Class redefining was the major one.
 
 Managing memory and ownership in linked list–based structures without using STL containers.
