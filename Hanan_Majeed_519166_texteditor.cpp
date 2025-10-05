@@ -14,13 +14,13 @@ class Node{
     }
 };
 
-class texteditor{
+class TextEditor{
     private:
     Node* head;
     Node* tail;
     Node* current;
     public:
-    texteditor(){
+    TextEditor(){
         head = tail = NULL;
     }
     bool is_empty(){
@@ -125,7 +125,7 @@ class texteditor{
 
 int main(){
 
-    texteditor ed;
+    TextEditor ed;
     ed.insertChar('a');
     ed.insertChar('b');
     ed.deleteChar();
